@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="1.利用flexbox布局 123456789101112131415161718192021.parent&amp;#123;    width: 100%;    height: 37.5rem/* 600px */;    background: #09c;    display: flex;    justify-content:center;    /* 水平居中 */    align-ite">
+<meta name="description" content="判断浏览器支持localStorage还是cookie，存储数据 获取北京天数 123456getDay: function() &amp;#123; //获取北京的天数   从1970.1.1开始计算 	var D = new Date(); //获取当前时间 	var Tc = D.getTime() - D.getTimezoneOffset() * 60000; //当前时间转北京时间毫秒数 	v">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css保持浮层水平垂直居中">
-<meta property="og:url" content="https://wj828.github.io/myBlog.github.io/2019/09/03/css保持浮层水平垂直居中/index.html">
+<meta property="og:title" content="同时在localStorage和cookie中存储数据">
+<meta property="og:url" content="https://wj828.github.io/myBlog.github.io/2019/11/19/同时在localStorage和cookie中存储数据/index.html">
 <meta property="og:site_name" content="myBlog">
-<meta property="og:description" content="1.利用flexbox布局 123456789101112131415161718192021.parent&amp;#123;    width: 100%;    height: 37.5rem/* 600px */;    background: #09c;    display: flex;    justify-content:center;    /* 水平居中 */    align-ite">
+<meta property="og:description" content="判断浏览器支持localStorage还是cookie，存储数据 获取北京天数 123456getDay: function() &amp;#123; //获取北京的天数   从1970.1.1开始计算 	var D = new Date(); //获取当前时间 	var Tc = D.getTime() - D.getTimezoneOffset() * 60000; //当前时间转北京时间毫秒数 	v">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-03T10:55:16.390Z">
+<meta property="og:updated_time" content="2019-11-21T09:50:17.784Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css保持浮层水平垂直居中">
-<meta name="twitter:description" content="1.利用flexbox布局 123456789101112131415161718192021.parent&amp;#123;    width: 100%;    height: 37.5rem/* 600px */;    background: #09c;    display: flex;    justify-content:center;    /* 水平居中 */    align-ite">
+<meta name="twitter:title" content="同时在localStorage和cookie中存储数据">
+<meta name="twitter:description" content="判断浏览器支持localStorage还是cookie，存储数据 获取北京天数 123456getDay: function() &amp;#123; //获取北京的天数   从1970.1.1开始计算 	var D = new Date(); //获取当前时间 	var Tc = D.getTime() - D.getTimezoneOffset() * 60000; //当前时间转北京时间毫秒数 	v">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://wj828.github.io/myBlog.github.io/2019/09/03/css保持浮层水平垂直居中/">
+  <link rel="canonical" href="https://wj828.github.io/myBlog.github.io/2019/11/19/同时在localStorage和cookie中存储数据/">
 
 
 
 
 
-  <title>css保持浮层水平垂直居中 | myBlog</title>
+  <title>同时在localStorage和cookie中存储数据 | myBlog</title>
   
 
 
@@ -252,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wj828.github.io/myBlog.github.io/myBlog.github.io/2019/09/03/css保持浮层水平垂直居中/">
+    <link itemprop="mainEntityOfPage" href="https://wj828.github.io/myBlog.github.io/myBlog.github.io/2019/11/19/同时在localStorage和cookie中存储数据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wenjing">
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css保持浮层水平垂直居中</h1>
+          <h1 class="post-title" itemprop="name headline">同时在localStorage和cookie中存储数据</h1>
         
 
         <div class="post-meta">
@@ -281,8 +281,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-03T18:29:14+08:00">
-                2019-09-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-19T16:57:47+08:00">
+                2019-11-19
               </time>
             
 
@@ -341,17 +341,15 @@
       
 
       
-        <p>1.利用flexbox布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 37.5rem/* 600px */;</span><br><span class="line">    background: #09c;</span><br><span class="line">    display: flex;</span><br><span class="line">    justify-content:center;    /* 水平居中 */</span><br><span class="line">    align-items:center;        /* 垂直居中 */</span><br><span class="line">    /* flex-direction:column; */    /* 一列显示 */</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.children&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    border: 1px dashed #000;</span><br><span class="line">    margin: 5px;</span><br><span class="line">    /*如果children下面还有子元素的话，可以嵌套使用*/</span><br><span class="line">    /* display: flex;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    align-items:center;  */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>判断浏览器支持localStorage还是cookie，存储数据</p>
+<p>获取北京天数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">getDay: function() &#123; //获取北京的天数   从1970.1.1开始计算 </span><br><span class="line">	var D = new Date(); //获取当前时间 </span><br><span class="line">	var Tc = D.getTime() - D.getTimezoneOffset() * 60000; //当前时间转北京时间毫秒数 </span><br><span class="line">	var Dc = Tc / 86400000 | 0; //北京时间的天数(整形数字) </span><br><span class="line">	return Dc; </span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
-<p>2.利用绝对定位和transform</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123; </span><br><span class="line">    position: relative; </span><br><span class="line">    background-color: #eee;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100%;</span><br><span class="line">&#125; </span><br><span class="line">.parent .children&#123; </span><br><span class="line">    background-color: #751; </span><br><span class="line">    width: 200px; </span><br><span class="line">    height: 200px;</span><br><span class="line">    position: absolute;  </span><br><span class="line">    top: 50%; </span><br><span class="line">    left: 50%; </span><br><span class="line">    -ms-transform: translate(-50%,-50%);</span><br><span class="line">    -moz-transform: translate(-50%,-50%);</span><br><span class="line">    -o-transform: translate(-50%,-50%);</span><br><span class="line">    transform: translate(-50%,-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>存储数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">setCache: function(n, v, d) &#123; //创建或更新localStorage及cookie  写入 </span><br><span class="line">	if (!!window.localStorage) &#123; //如果浏览器支持localStorage   </span><br><span class="line">		window.localStorage.setItem(n, v); //在localStorage中存储数据 </span><br><span class="line">	&#125;; </span><br><span class="line">	if (navigator.cookieEnabled) &#123; //如果浏览器支持cookie  </span><br><span class="line">		document.cookie = n + &quot;=&quot; + v + &quot;;expires=&quot; + d + &quot;;path=/;&quot; //在cookie中存储数据  </span><br><span class="line">	&#125;; </span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
-<p>3.将父元素定位，子元素绝对定位，利用margin负值为子元素宽高的一半来实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    position: relative;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    height: 600px;</span><br><span class="line">    width: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.parent .children&#123;</span><br><span class="line">    background-color: #751;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    margin: -100px 0 0 -100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>4.利用定位与margin：auto</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 37.5rem/* 600px */;</span><br><span class="line">    background: #09c;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.children&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    margin: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>获取数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">getCache: function(key, Dc, time, flag) &#123; //获取数据    </span><br><span class="line">	//key获取的key值   Dc表示当天北京天数  time删除几天前的数据   flag= true false是否删除记录 </span><br><span class="line">	//存储数据中_w_开头  是用户操作数据   _p_  合作方信息 </span><br><span class="line">	// 获取用户localStorage及cookie（优先使用localStorage，但数据项残缺时会从cookie向localStorage中拷贝） </span><br><span class="line">	var key = key || &quot;&quot;; </span><br><span class="line">	var Dc = Number(Dc) || &quot;&quot;; </span><br><span class="line">	var time = time || &quot;&quot;; </span><br><span class="line">	var flag = flag || &quot;&quot;; </span><br><span class="line">	// 判断key  Dc time flag 值是否存在 ，不存在赋予初始值空; </span><br><span class="line">	var a, //a  键值所对应的value值 </span><br><span class="line">		t, //存放cookie中取出的数据 </span><br><span class="line">		k = key.substring(0, key.length - 5), //获取前面公共值的部分，以供下面删除无用值的判断。后5位是北京时间的天数 </span><br><span class="line">		c = &#123;&#125;; //存放localstorage中取出的数据 </span><br><span class="line">	if (!!window.localStorage) &#123; //支持localStorage情况下先从localStorage获取数据 </span><br><span class="line">		t = window.localStorage; </span><br><span class="line">		for (var o in t) &#123; </span><br><span class="line">			if (o.indexOf(k) == 0 &amp;&amp; o.indexOf(&apos;_w_&apos;) != -1) &#123; </span><br><span class="line">				if (flag == true) &#123; </span><br><span class="line">					if (Number(o.substring(o.length - 5)) &lt;= Dc - time / 24 &amp;&amp; time &gt;= 24) &#123; //北京天数 18103 </span><br><span class="line">						this.setCache(o, null, &apos;Mon, 26 Jul 1997 05:00:00 GMT&apos;); // 删除cookie已过期的 </span><br><span class="line">						t.removeItem(o); //   删除localStorage已过期的（策略中时间小时） </span><br><span class="line">					&#125; else if (Number(o.substring(o.length - 5)) &lt;= Dc - time &amp;&amp; time &lt; 24) &#123;  </span><br><span class="line">						this.setCache(o, null, &apos;Mon, 26 Jul 1997 05:00:00 GMT&apos;); //删除cookie已过期的 </span><br><span class="line">						t.removeItem(o); //删除localStorage已过期的 ( 策略中时间是天数) </span><br><span class="line">					&#125; else &#123; </span><br><span class="line">						c[o] = t.getItem(o); //localStorage中先存放的数据 </span><br><span class="line">					&#125;; </span><br><span class="line">				&#125;; </span><br><span class="line"> </span><br><span class="line">			&#125;; </span><br><span class="line">		&#125;; </span><br><span class="line">	&#125;; </span><br><span class="line">	if (navigator.cookieEnabled) &#123; //支持cookie情况下从cookie获取数据比对后更新 </span><br><span class="line">		t = (function() &#123; </span><br><span class="line">			var a = &#123;&#125;, </span><br><span class="line">				t, // </span><br><span class="line">				c = document.cookie, //获取cookie </span><br><span class="line">				r = /(?:([^; ]+?)=([^;]+))/g; //匹配url地址的参数 </span><br><span class="line">			while ((t = r.exec(c)) != null) &#123; //exec()正则表达式的匹配  </span><br><span class="line">				//匹配值放入到a中  key:value   </span><br><span class="line">				t[1] in a ? typeof(a[t[1]]) === &quot;string&quot; ? a[t[1]] = [a[t[1]], t[2]] : a[t[1]].push(t[2]) : a[t[1]] = t[2]; </span><br><span class="line">			&#125;; </span><br><span class="line">			return a; </span><br><span class="line">		&#125;()); </span><br><span class="line">		for (var o in t) &#123; </span><br><span class="line">			if (o.indexOf(&quot;_w_&quot;) == 0 &amp;&amp; !c.hasOwnProperty(o)) &#123; </span><br><span class="line">				//检查数据项，且未能从localStorage取得   _w_开头的变量名存储的是用户相关操作的数据 </span><br><span class="line">				if (!!window.localStorage) &#123; //支持localStorage </span><br><span class="line">					window.localStorage.setItem(o, t[o]); //向localStorage写入该标识（恢复） </span><br><span class="line">				&#125;; </span><br><span class="line">			&#125;; </span><br><span class="line">		&#125;; </span><br><span class="line">	&#125;; </span><br><span class="line">	a = t[key] //获取键值key 的value值 </span><br><span class="line">	return a; </span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
 
       
@@ -377,8 +375,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/myBlog.github.io/2019/09/03/CSS完美实现iframe高度自适应（支持跨域）/" rel="next" title="CSS完美实现iframe高度自适应（支持跨域）">
-                <i class="fa fa-chevron-left"></i> CSS完美实现iframe高度自适应（支持跨域）
+              <a href="/myBlog.github.io/2019/10/23/node转发表单上传文件到后台/" rel="next" title="node转发表单上传文件到后台">
+                <i class="fa fa-chevron-left"></i> node转发表单上传文件到后台
               </a>
             
           </div>
@@ -387,8 +385,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/myBlog.github.io/2019/09/03/vue兼容IE浏览器/" rel="prev" title="vue兼容IE浏览器">
-                vue兼容IE浏览器 <i class="fa fa-chevron-right"></i>
+              <a href="/myBlog.github.io/2019/11/21/HTTP、HTTPS、TCP、IP/" rel="prev" title="HTTP、HTTPS、TCP、IP ">
+                HTTP、HTTPS、TCP、IP  <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

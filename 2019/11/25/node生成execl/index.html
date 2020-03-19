@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="1.利用flexbox布局 123456789101112131415161718192021.parent&amp;#123;    width: 100%;    height: 37.5rem/* 600px */;    background: #09c;    display: flex;    justify-content:center;    /* 水平居中 */    align-ite">
+<meta name="description" content="一、背景 前端上传execl到后端，解析execl数据存储在数据库中。前端查询数组，后端查询数据库并组合好数据返回前端， 前端生成execl 二、技术点介绍： 1.ejsExcel是一款国人开发的、在Node.js应用程序中使用我们预先设置好的Excel模板导出Excel表格的模板引擎 2.util 是一个Node.js 核心模块，提供常用函数的集合，用于弥补核心JavaScript 的功能 过于">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css保持浮层水平垂直居中">
-<meta property="og:url" content="https://wj828.github.io/myBlog.github.io/2019/09/03/css保持浮层水平垂直居中/index.html">
+<meta property="og:title" content="node生成execl">
+<meta property="og:url" content="https://wj828.github.io/myBlog.github.io/2019/11/25/node生成execl/index.html">
 <meta property="og:site_name" content="myBlog">
-<meta property="og:description" content="1.利用flexbox布局 123456789101112131415161718192021.parent&amp;#123;    width: 100%;    height: 37.5rem/* 600px */;    background: #09c;    display: flex;    justify-content:center;    /* 水平居中 */    align-ite">
+<meta property="og:description" content="一、背景 前端上传execl到后端，解析execl数据存储在数据库中。前端查询数组，后端查询数据库并组合好数据返回前端， 前端生成execl 二、技术点介绍： 1.ejsExcel是一款国人开发的、在Node.js应用程序中使用我们预先设置好的Excel模板导出Excel表格的模板引擎 2.util 是一个Node.js 核心模块，提供常用函数的集合，用于弥补核心JavaScript 的功能 过于">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-03T10:55:16.390Z">
+<meta property="og:updated_time" content="2019-11-25T12:48:05.358Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css保持浮层水平垂直居中">
-<meta name="twitter:description" content="1.利用flexbox布局 123456789101112131415161718192021.parent&amp;#123;    width: 100%;    height: 37.5rem/* 600px */;    background: #09c;    display: flex;    justify-content:center;    /* 水平居中 */    align-ite">
+<meta name="twitter:title" content="node生成execl">
+<meta name="twitter:description" content="一、背景 前端上传execl到后端，解析execl数据存储在数据库中。前端查询数组，后端查询数据库并组合好数据返回前端， 前端生成execl 二、技术点介绍： 1.ejsExcel是一款国人开发的、在Node.js应用程序中使用我们预先设置好的Excel模板导出Excel表格的模板引擎 2.util 是一个Node.js 核心模块，提供常用函数的集合，用于弥补核心JavaScript 的功能 过于">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://wj828.github.io/myBlog.github.io/2019/09/03/css保持浮层水平垂直居中/">
+  <link rel="canonical" href="https://wj828.github.io/myBlog.github.io/2019/11/25/node生成execl/">
 
 
 
 
 
-  <title>css保持浮层水平垂直居中 | myBlog</title>
+  <title>node生成execl | myBlog</title>
   
 
 
@@ -252,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wj828.github.io/myBlog.github.io/myBlog.github.io/2019/09/03/css保持浮层水平垂直居中/">
+    <link itemprop="mainEntityOfPage" href="https://wj828.github.io/myBlog.github.io/myBlog.github.io/2019/11/25/node生成execl/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wenjing">
@@ -269,7 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css保持浮层水平垂直居中</h1>
+          <h1 class="post-title" itemprop="name headline">node生成execl</h1>
         
 
         <div class="post-meta">
@@ -281,8 +281,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-03T18:29:14+08:00">
-                2019-09-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-25T16:15:52+08:00">
+                2019-11-25
               </time>
             
 
@@ -341,18 +341,20 @@
       
 
       
-        <p>1.利用flexbox布局</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 37.5rem/* 600px */;</span><br><span class="line">    background: #09c;</span><br><span class="line">    display: flex;</span><br><span class="line">    justify-content:center;    /* 水平居中 */</span><br><span class="line">    align-items:center;        /* 垂直居中 */</span><br><span class="line">    /* flex-direction:column; */    /* 一列显示 */</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.children&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    border: 1px dashed #000;</span><br><span class="line">    margin: 5px;</span><br><span class="line">    /*如果children下面还有子元素的话，可以嵌套使用*/</span><br><span class="line">    /* display: flex;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    align-items:center;  */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>一、背景</p>
+<p>前端上传execl到后端，解析execl数据存储在数据库中。前端查询数组，后端查询数据库并组合好数据返回前端，</p>
+<p>前端生成execl</p>
+<p>二、技术点介绍：</p>
+<p>1.ejsExcel是一款国人开发的、在Node.js应用程序中使用我们预先设置好的Excel模板导出Excel表格的模板引擎</p>
+<p>2.util 是一个Node.js 核心模块，提供常用函数的集合，用于弥补核心JavaScript 的功能 过于精简的不足。</p>
+<p>三、实现</p>
+<p>1.设置Excel模板</p>
+<p>例如：</p>
+<p>![image-20191125204802025](/Users/wj/Library/Application Support/typora-user-images/image-20191125204802025.png)</p>
+<p>2.获取到后台返回的数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">const ejsexcel = require(&quot;ejsexcel&quot;);</span><br><span class="line">const fs = require(&quot;fs&quot;);</span><br><span class="line">const util = require(&quot;util&quot;);</span><br><span class="line">const readFileAsync = util.promisify(fs.readFile);</span><br><span class="line">const writeFileAsync = util.promisify(fs.writeFile);</span><br><span class="line">const utils = require(&apos;../utils/utils.js&apos;)</span><br><span class="line">exports.getList = async function(req, res) &#123;</span><br><span class="line">  let data = req._parsedOriginalUrl.search;</span><br><span class="line">  utils.ajaxGet(data, 后台url).then(async function(datas) &#123;</span><br><span class="line">    //获得Excel模板的buffer对象</span><br><span class="line">    const _data = JSON.parse(datas)</span><br><span class="line">    const data = _data.data.items;</span><br><span class="line">    const exlBuf = await readFileAsync(&quot;./excel/down.xlsx&quot;);</span><br><span class="line">    //用数据源(对象)data渲染Excel模板</span><br><span class="line">    const exlBuf2 = await ejsexcel.renderExcel(exlBuf, data);</span><br><span class="line">    res.send(&#123;</span><br><span class="line">      code: 10000,</span><br><span class="line">      data: &#123;</span><br><span class="line">        data: exlBuf2</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>2.利用绝对定位和transform</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123; </span><br><span class="line">    position: relative; </span><br><span class="line">    background-color: #eee;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100%;</span><br><span class="line">&#125; </span><br><span class="line">.parent .children&#123; </span><br><span class="line">    background-color: #751; </span><br><span class="line">    width: 200px; </span><br><span class="line">    height: 200px;</span><br><span class="line">    position: absolute;  </span><br><span class="line">    top: 50%; </span><br><span class="line">    left: 50%; </span><br><span class="line">    -ms-transform: translate(-50%,-50%);</span><br><span class="line">    -moz-transform: translate(-50%,-50%);</span><br><span class="line">    -o-transform: translate(-50%,-50%);</span><br><span class="line">    transform: translate(-50%,-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>3.将父元素定位，子元素绝对定位，利用margin负值为子元素宽高的一半来实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    position: relative;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    height: 600px;</span><br><span class="line">    width: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.parent .children&#123;</span><br><span class="line">    background-color: #751;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    margin: -100px 0 0 -100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>4.利用定位与margin：auto</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.parent&#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 37.5rem/* 600px */;</span><br><span class="line">    background: #09c;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.children&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    margin: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<p>![image-20191125204722676](/Users/wj/Library/Application Support/typora-user-images/image-20191125204722676.png)</p>
 
       
     </div>
@@ -377,8 +379,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/myBlog.github.io/2019/09/03/CSS完美实现iframe高度自适应（支持跨域）/" rel="next" title="CSS完美实现iframe高度自适应（支持跨域）">
-                <i class="fa fa-chevron-left"></i> CSS完美实现iframe高度自适应（支持跨域）
+              <a href="/myBlog.github.io/2019/11/21/HTTP、HTTPS、TCP、IP/" rel="next" title="HTTP、HTTPS、TCP、IP ">
+                <i class="fa fa-chevron-left"></i> HTTP、HTTPS、TCP、IP 
               </a>
             
           </div>
@@ -387,8 +389,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/myBlog.github.io/2019/09/03/vue兼容IE浏览器/" rel="prev" title="vue兼容IE浏览器">
-                vue兼容IE浏览器 <i class="fa fa-chevron-right"></i>
+              <a href="/myBlog.github.io/2019/11/26/javascript与iframe之间的通信/" rel="prev" title="javascript与iframe之间的通信">
+                javascript与iframe之间的通信 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
